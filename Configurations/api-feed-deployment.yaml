@@ -30,5 +30,7 @@ spec:
         envFrom:
           - secretRef:
               name: aws-secret
+          - secretRef:
+              name: env-secret
           - configMapRef:
               name: env-configmap
