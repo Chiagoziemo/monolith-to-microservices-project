@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: chiagoziem/udagram-frontend:v1
+        image: chiagoziem/udagram-frontend:v2
         imagePullPolicy: Always
         resources:
           requests:

@@ -16,14 +16,14 @@ spec:
     spec:
       containers:
       - name: api-feed
-        image: chiagoziem/udagram-api-feed:v1
+        image: chiagoziem/udagram-api-feed:v2
         imagePullPolicy: Always
         resources:
           requests:
-            memory: "128Mi"
+            memory: "2048Mi"
             cpu: "250m"
           limits:
-            memory: "1024Mi"
+            memory: "2048Mi"
             cpu: "500m"
         ports:
         - containerPort: 8080
