@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api-feed
-        image: chiagoziem/udagram-api-feed
+        image: chiagoziem/udagram-api-feed:v1
         imagePullPolicy: Always
         resources:
           requests:
@@ -34,3 +34,4 @@ spec:
               name: env-secret
           - configMapRef:
               name: env-configmap
+      restartPolicy: Always

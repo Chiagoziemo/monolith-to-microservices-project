@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: chiagoziem/reverseproxy
+        image: chiagoziem/udagram-reverseproxy:v2
         imagePullPolicy: Always
         resources:
           requests:
@@ -34,3 +34,4 @@ spec:
               name: env-secret
           - configMapRef:
               name: env-configmap
+      restartPolicy: Always

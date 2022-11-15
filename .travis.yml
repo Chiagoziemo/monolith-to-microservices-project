@@ -16,13 +16,13 @@ script:
   - docker build -t udagram-api-user ./udagram-api-user
   - docker tag udagram-api-user chiagoziem/udagram-api-user:v1
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-frontend chiagoziem/udagram-frontend:v1
+  - docker tag udagram-frontend chiagoziem/udagram-frontend:v2
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
-  - docker tag udagram-reverseproxy chiagoziem/udagram-reverseproxy:v1
+  - docker tag udagram-reverseproxy chiagoziem/udagram-reverseproxy:v2a
 
 after_success:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push chiagoziem/udagram-api-feed:v1
   - docker push chiagoziem/udagram-api-user:v1
-  - docker push chiagoziem/udagram-frontend:v1
-  - docker push chiagoziem/udagram-reverseproxy:v1
+  - docker push chiagoziem/udagram-frontend:v2
+  - docker push chiagoziem/udagram-reverseproxy:v2a
