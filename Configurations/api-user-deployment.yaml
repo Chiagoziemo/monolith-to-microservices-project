@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api-user
-        image: chiagoziem/udagram-api-user:v2
+        image: chiagoziem/udagram-api-user:v2a
         imagePullPolicy: Always
         resources:
           requests:

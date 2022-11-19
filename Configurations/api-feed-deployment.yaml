@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: api-feed
-        image: chiagoziem/udagram-api-feed:v2
+        image: chiagoziem/udagram-api-feed:v2a
         imagePullPolicy: Always
         resources:
           requests:

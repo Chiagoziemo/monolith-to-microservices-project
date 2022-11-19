@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: chiagoziem/udagram-reverseproxy:v2
+        image: chiagoziem/udagram-reverseproxy:v2b
         imagePullPolicy: Always
         resources:
           requests:
