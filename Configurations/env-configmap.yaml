@@ -4,7 +4,7 @@ metadata:
   name: env-configmap 
 data:
   # Configuration values can be set as key-value properties
-  AWS_BUCKET: arn:aws:s3:::ag-mono-micro-bucket
+  AWS_BUCKET: arn:aws:s3:::my-mono-bucket
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testing
