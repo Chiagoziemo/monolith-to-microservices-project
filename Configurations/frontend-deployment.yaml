@@ -5,7 +5,7 @@ metadata:
   labels:
     app: frontend
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: frontend
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: chiagoziem/udagram-frontend:v2a
+        image: chiagoziem/udagram-frontend:local3
         imagePullPolicy: Always
         resources:
           requests:

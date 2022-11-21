@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: reverseproxy
-        image: chiagoziem/udagram-reverseproxy:v2b
+        image: chiagoziem/udagram-reverseproxy:v3
         imagePullPolicy: Always
         resources:
           requests:
@@ -26,7 +26,7 @@ spec:
             memory: "1024Mi"
             cpu: "500m"
         ports:
-        - containerPort: 8080
+        - containerPort: 80
         envFrom:
           - secretRef:
               name: aws-secret
